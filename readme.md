@@ -1,3 +1,4 @@
+dev version 
 1. composer require noistudio/laravel-trumbowyg
 2. Для подключения класса блока добавьте в спец.конфиг
   ` "trumbowyg"=>\LaravelTrumbowyg\blocks\trumbowyg\TrumbowygField::class,`
