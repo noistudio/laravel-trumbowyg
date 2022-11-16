@@ -22,13 +22,16 @@ $(document).ready(function(){
         var new_input_id="lfm_load_file"+Math.random().toString(36).substring(7);
         var lfm_prefix=$(".route_lfm").data("prefix");
 
+
+
         var input=$(this).closest("li").children("input");
 
         var button=$(this);
 
 
 
-        lfm(new_input_id,'lfm', 'image', {prefix: lfm_prefix},function(file){
+
+        lfm(new_input_id,'lfm', 'file', {prefix: lfm_prefix},function(file){
 
             //  window.opener.document.getElementById("pass_data_from_child").setAttribute("data-file",file_path);
             //   window.opener.document.getElementById("pass_data_from_child").dispatchEvent(new Event('change'));
@@ -76,7 +79,7 @@ $(document).ready(function(){
 
 
 
-        lfm(new_input_id,'lfm', 'image', {prefix: lfm_prefix},function(file){
+        lfm(new_input_id,'lfm', 'file', {prefix: lfm_prefix},function(file){
 
             //  window.opener.document.getElementById("pass_data_from_child").setAttribute("data-file",file_path);
             //   window.opener.document.getElementById("pass_data_from_child").dispatchEvent(new Event('change'));
